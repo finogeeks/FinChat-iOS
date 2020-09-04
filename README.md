@@ -88,7 +88,7 @@ For the demo purpose, you can run this demo in the simulator of Xcode.
 > Notes: appKey is bundled with dundleId. Therefore if you change bundleId, you will get appKey is invalid error when you run this demo.
 > Contact us for the further information.
 
-The detailed document of SDK is [here] (https://docs.finogeeks.club/docs/mobile/#/).
+The detailed document of SDK is [here](https://docs.finogeeks.club/docs/mobile/#/).
 
 # Contributing
 
