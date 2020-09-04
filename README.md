@@ -75,11 +75,11 @@ After the installation, use `xxxx.xcworkspace` to open the project.
 
 1. Use Xcdoe 10 or above, change File->Workspace Settings->Build System to [Legacy Build System].
 
-<img src="/Users/gentang/git/finogeeks/open_source/FinChat-iOS/docs/dev/ios/legacy_build_system.jpg" alt="legacy build system" width="650px">
+<img src="docs/dev/ios/legacy_build_system.jpg" alt="legacy build system" width="650px">
 
 2. Set Project->Build Settings->Bitcode to [NO].
 
-<img src="/Users/gentang/git/finogeeks/open_source/FinChat-iOS/docs/dev/ios/bitcode.jpg" alt="bitcode" width="650px">
+<img src="docs/dev/ios/bitcode.jpg" alt="bitcode" width="650px">
 
 ## Run
 
