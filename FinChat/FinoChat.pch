@@ -1,0 +1,32 @@
+//
+//  FinoChat.pch
+//  FinoChat
+//
+//  Created by 杨涛 on 2017/9/21.
+//  Copyright © 2017年 finogeeks.com. All rights reserved.
+//
+
+#ifndef FinoChat_pch
+#define FinoChat_pch
+#import <ReactiveObjC/ReactiveObjC.h>
+
+//获取安全区域距离
+#define kFinoSafeAreaTop        kFinoWindowSafeAreaInset.top
+#define kFinoSafeAreaBottom     kFinoWindowSafeAreaInset.bottom
+
+#define kFinoWindowSafeAreaInset \
+({\
+UIEdgeInsets returnInsets = UIEdgeInsetsMake(20, 0, 0, 0);\
+UIWindow * keyWindow = [UIApplication sharedApplication].keyWindow;\
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([keyWindow respondsToSelector:NSSelectorFromString(@"safeAreaInsets")]) {\
+UIEdgeInsets inset = [[keyWindow valueForKeyPath:@"safeAreaInsets"] UIEdgeInsetsValue];\
+returnInsets = inset;\
+}\
+_Pragma("clang diagnostic pop") \
+(returnInsets);\
+})\
+
+
+#endif /* FinoChat_pch */
