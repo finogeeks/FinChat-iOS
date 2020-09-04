@@ -1,0 +1,1380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0535063DDD3411CCD74EA8AC /* libPods-FinChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1758DB838CF6EB0F9A848B76 /* libPods-FinChatDemo.a */; };
+		6778A2A5212D7A0F00B59A86 /* FINPushNotifacationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6778A2A4212D7A0F00B59A86 /* FINPushNotifacationManager.m */; };
+		900316EC331E965A23BCB156 /* libPods-finshare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12A7F12E0807C54765D06A /* libPods-finshare.a */; };
+		9D4E9B682020618200C545CA /* FinChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9AF12020618000C545CA /* FinChat.xcdatamodeld */; };
+		9D4E9B692020618200C545CA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E9AF32020618000C545CA /* Info.plist */; };
+		9D4E9B792020618200C545CA /* UIImage+Implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B142020618100C545CA /* UIImage+Implementation.m */; };
+		9D4E9B832020618200C545CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B272020618100C545CA /* AppDelegate.m */; };
+		9D4E9BA12020618200C545CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B4C2020618100C545CA /* main.m */; };
+		9D4E9BA52020618200C545CA /* FCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B532020618100C545CA /* FCNavigationController.m */; };
+		9D4E9BA62020618200C545CA /* FCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B542020618100C545CA /* FCViewController.m */; };
+		9D4E9BA72020618200C545CA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E9B572020618200C545CA /* index.html */; };
+		9D4E9BA82020618200C545CA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9B592020618200C545CA /* Constants.m */; };
+		9D4E9BB6202061C600C545CA /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9BB5202061C600C545CA /* ShareViewController.m */; };
+		9D4E9BBD202061C600C545CA /* finshare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D4E9BB2202061C600C545CA /* finshare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D4FF4CD20E0A0DC002C7AA0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4FF4CC20E0A0DC002C7AA0 /* CloudKit.framework */; };
+		9D5C9A2C20DA192900713E18 /* FCUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C9A2A20DA192900713E18 /* FCUIHelper.m */; };
+		9D6A4FAC20E2730600B68205 /* FCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A4FAB20E2730600B68205 /* FCService.m */; };
+		9D6A4FC420E2782500B68205 /* FCQRCodeScanningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A4FC220E2782400B68205 /* FCQRCodeScanningViewController.m */; };
+		9D6A4FD520E2788B00B68205 /* UIImage+ImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A4FCA20E2788B00B68205 /* UIImage+ImageSize.m */; };
+		9D6CB5F92060E59900BA186A /* loading-animate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5E72060E59900BA186A /* loading-animate.gif */; };
+		9D6CB5FA2060E59900BA186A /* finochatlogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5E82060E59900BA186A /* finochatlogo@3x.png */; };
+		9D6CB5FB2060E59900BA186A /* agreement@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5E92060E59900BA186A /* agreement@2x.png */; };
+		9D6CB5FD2060E59900BA186A /* agreement@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5EB2060E59900BA186A /* agreement@3x.png */; };
+		9D6CB5FE2060E59900BA186A /* finochatlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5EC2060E59900BA186A /* finochatlogo@2x.png */; };
+		9D6CB6082060E59900BA186A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB5F62060E59900BA186A /* Media.xcassets */; };
+		9D6CB60A2060F82900BA186A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB6092060F82900BA186A /* Main.storyboard */; };
+		9D7C156620DCE022007FB74C /* FCUserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C155620DCE022007FB74C /* FCUserAgreementViewController.m */; };
+		9DD09AC520207CFB00080061 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DD09AAD20207CFB00080061 /* LaunchScreen.strings */; };
+		9DD09AC620207CFB00080061 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DD09AAF20207CFB00080061 /* Main.strings */; };
+		9DD09AC720207CFB00080061 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DD09AB120207CFB00080061 /* cities.plist */; };
+		9DD09AD820207CFB00080061 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DD09AC320207CFB00080061 /* Localizable.strings */; };
+		9DEA665020DA071000A39E70 /* UIImage+Fino.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA664C20DA070F00A39E70 /* UIImage+Fino.m */; };
+		9DEA665120DA071000A39E70 /* UIColor+Fino.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA664F20DA070F00A39E70 /* UIColor+Fino.m */; };
+		A81D8355228E58FB00687A57 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D8354228E58FB00687A57 /* CallDirectoryHandler.m */; };
+		A81D8359228E58FB00687A57 /* FINOrgCallDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A81D8351228E58FB00687A57 /* FINOrgCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A81D8366228E594900687A57 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D8365228E594900687A57 /* CallDirectoryHandler.m */; };
+		A81D836A228E594900687A57 /* FINContactCallDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A81D8362228E594900687A57 /* FINContactCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A893E292217DE7AF00D5E70C /* channel_work_ico_applets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A893E28E217DE7AE00D5E70C /* channel_work_ico_applets@3x.png */; };
+		A893E294217DE7AF00D5E70C /* channel_work_ico_channel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A893E28F217DE7AE00D5E70C /* channel_work_ico_channel@3x.png */; };
+		A893E296217DE7AF00D5E70C /* channel_work_ico_applets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A893E290217DE7AF00D5E70C /* channel_work_ico_applets@2x.png */; };
+		A893E298217DE7AF00D5E70C /* channel_work_ico_channel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A893E291217DE7AF00D5E70C /* channel_work_ico_channel@2x.png */; };
+		A8AD948A23725B4A0088CB3B /* FCQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD947423725B4A0088CB3B /* FCQRCodeScanningView.m */; };
+		A8AD948B23725B4A0088CB3B /* FCQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD947823725B4A0088CB3B /* FCQRCodeGenerateManager.m */; };
+		A8AD948C23725B4A0088CB3B /* FCQRCodeAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD947A23725B4A0088CB3B /* FCQRCodeAlbumManager.m */; };
+		A8AD948D23725B4A0088CB3B /* FCQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD947B23725B4A0088CB3B /* FCQRCodeScanManager.m */; };
+		A8AD948E23725B4A0088CB3B /* FCQRCodeHelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD947C23725B4A0088CB3B /* FCQRCodeHelperTool.m */; };
+		A8AD94992373A7390088CB3B /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8AD94982373A7390088CB3B /* theme.plist */; };
+		CD04AABA21D2183D007AB787 /* FCHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD04AAB821D2183D007AB787 /* FCHUD.m */; };
+		CD0BEEF021CB74E400CCF68E /* FCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEEE21CB74E400CCF68E /* FCLoginViewController.m */; };
+		CD0BEEF121CB74E400CCF68E /* FCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEEF21CB74E400CCF68E /* FCLoginViewController.xib */; };
+		CD0BEEF521CB7BDF00CCF68E /* FCPhoneVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEF321CB7BDF00CCF68E /* FCPhoneVerifyViewController.m */; };
+		CD0BEEF621CB7BDF00CCF68E /* FCPhoneVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEF421CB7BDF00CCF68E /* FCPhoneVerifyViewController.xib */; };
+		CD0BEEFA21CB7E7600CCF68E /* FCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEF821CB7E7600CCF68E /* FCRegisterViewController.m */; };
+		CD0BEEFB21CB7E7600CCF68E /* FCRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEF921CB7E7600CCF68E /* FCRegisterViewController.xib */; };
+		CD0BEEFF21CB82DD00CCF68E /* FCNewPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEFD21CB82DD00CCF68E /* FCNewPasswordViewController.m */; };
+		CD0BEF0021CB82DD00CCF68E /* FCNewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEFE21CB82DD00CCF68E /* FCNewPasswordViewController.xib */; };
+		CD386A1B22437FEC0000DCEB /* FINAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD386A1922437FEC0000DCEB /* FINAuthViewController.m */; };
+		CD386A1C22437FEC0000DCEB /* FINAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD386A1A22437FEC0000DCEB /* FINAuthViewController.xib */; };
+		CD6CAB5B215E0EAD005B02DF /* FINMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CAB5A215E0EAD005B02DF /* FINMainController.m */; };
+		CD98AD0821D08540004075E5 /* FCServerSettingAddVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98AD0521D08540004075E5 /* FCServerSettingAddVC.m */; };
+		CD98AD0921D08540004075E5 /* FCServerSettingSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98AD0621D08540004075E5 /* FCServerSettingSelectVC.m */; };
+		CDEA6294229390F500C72317 /* FCQRCodeErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEA6293229390F500C72317 /* FCQRCodeErrorViewController.m */; };
+		EFBD306A93ED881414563572 /* libPods-finshare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12A7F12E0807C54765D06A /* libPods-finshare.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D4E9BBB202061C600C545CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4E9AB02020612000C545CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D4E9BB1202061C600C545CA;
+			remoteInfo = finshare;
+		};
+		A81D8357228E58FB00687A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4E9AB02020612000C545CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D8350228E58FB00687A57;
+			remoteInfo = FINOrgCallDirectory;
+		};
+		A81D8368228E594900687A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4E9AB02020612000C545CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D8361228E594900687A57;
+			remoteInfo = FINContactCallDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D4E9BC1202061C600C545CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A81D836A228E594900687A57 /* FINContactCallDirectory.appex in Embed App Extensions */,
+				9D4E9BBD202061C600C545CA /* finshare.appex in Embed App Extensions */,
+				A81D8359228E58FB00687A57 /* FINOrgCallDirectory.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01AFCC765BA6E9AA324AD253 /* Pods-FinChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0572BD3C40AA91F4F560C6D4 /* Pods-FinChat-Cloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChat-Cloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinChat-Cloud/Pods-FinChat-Cloud.debug.xcconfig"; sourceTree = "<group>"; };
+		08EA39E93D87EBD15721A403 /* Pods-FinChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinChat/Pods-FinChat.release.xcconfig"; sourceTree = "<group>"; };
+		1758DB838CF6EB0F9A848B76 /* libPods-FinChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		348A2F1FD6909A7FBF19365D /* Pods-finshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-finshare/Pods-finshare.release.xcconfig"; sourceTree = "<group>"; };
+		4439D0CD4ABDE6F4A0AD9950 /* Pods-finshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-finshare/Pods-finshare.debug.xcconfig"; sourceTree = "<group>"; };
+		4F73CA804161895D73965972 /* Pods-FinChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinChat/Pods-FinChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5B12A7F12E0807C54765D06A /* libPods-finshare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-finshare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6763EF954722707AD658A5B9 /* Pods-FinChat-Cloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChat-Cloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinChat-Cloud/Pods-FinChat-Cloud.release.xcconfig"; sourceTree = "<group>"; };
+		6778A2A3212D7A0F00B59A86 /* FINPushNotifacationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FINPushNotifacationManager.h; sourceTree = "<group>"; };
+		6778A2A4212D7A0F00B59A86 /* FINPushNotifacationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FINPushNotifacationManager.m; sourceTree = "<group>"; };
+		7383EE2BC0D5E3105DF79E13 /* libPods-FinChat-Cloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinChat-Cloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4E9AB82020612000C545CA /* FinChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4E9AF22020618000C545CA /* FinChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinChat.xcdatamodel; sourceTree = "<group>"; };
+		9D4E9AF32020618000C545CA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4E9AF52020618000C545CA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D4E9B142020618100C545CA /* UIImage+Implementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Implementation.m"; sourceTree = "<group>"; };
+		9D4E9B202020618100C545CA /* UIImage+Implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Implementation.h"; sourceTree = "<group>"; };
+		9D4E9B272020618100C545CA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D4E9B4C2020618100C545CA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D4E9B512020618100C545CA /* FCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNavigationController.h; sourceTree = "<group>"; };
+		9D4E9B522020618100C545CA /* FCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCViewController.h; sourceTree = "<group>"; };
+		9D4E9B532020618100C545CA /* FCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCNavigationController.m; sourceTree = "<group>"; };
+		9D4E9B542020618100C545CA /* FCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCViewController.m; sourceTree = "<group>"; };
+		9D4E9B552020618200C545CA /* FinoChat.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinoChat.pch; sourceTree = "<group>"; };
+		9D4E9B572020618200C545CA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9D4E9B592020618200C545CA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9D4E9B5F2020618200C545CA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9D4E9BB2202061C600C545CA /* finshare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = finshare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4E9BB4202061C600C545CA /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		9D4E9BB5202061C600C545CA /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		9D4E9BBA202061C600C545CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4E9BC2202062F900C545CA /* FinChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinChat.entitlements; sourceTree = "<group>"; };
+		9D4E9BC52020631600C545CA /* finshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = finshare.entitlements; sourceTree = "<group>"; };
+		9D4FF4CC20E0A0DC002C7AA0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9D5C9A2A20DA192900713E18 /* FCUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUIHelper.m; sourceTree = "<group>"; };
+		9D5C9A2B20DA192900713E18 /* FCUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUIHelper.h; sourceTree = "<group>"; };
+		9D6A4FAA20E2730600B68205 /* FCService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCService.h; sourceTree = "<group>"; };
+		9D6A4FAB20E2730600B68205 /* FCService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCService.m; sourceTree = "<group>"; };
+		9D6A4FC220E2782400B68205 /* FCQRCodeScanningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeScanningViewController.m; sourceTree = "<group>"; };
+		9D6A4FC320E2782400B68205 /* FCQRCodeScanningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeScanningViewController.h; sourceTree = "<group>"; };
+		9D6A4FC920E2788B00B68205 /* UIImage+ImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageSize.h"; sourceTree = "<group>"; };
+		9D6A4FCA20E2788B00B68205 /* UIImage+ImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageSize.m"; sourceTree = "<group>"; };
+		9D6CB5E72060E59900BA186A /* loading-animate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading-animate.gif"; sourceTree = "<group>"; };
+		9D6CB5E82060E59900BA186A /* finochatlogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finochatlogo@3x.png"; sourceTree = "<group>"; };
+		9D6CB5E92060E59900BA186A /* agreement@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "agreement@2x.png"; sourceTree = "<group>"; };
+		9D6CB5EB2060E59900BA186A /* agreement@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "agreement@3x.png"; sourceTree = "<group>"; };
+		9D6CB5EC2060E59900BA186A /* finochatlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finochatlogo@2x.png"; sourceTree = "<group>"; };
+		9D6CB5F62060E59900BA186A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		9D6CB6092060F82900BA186A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D7C155420DCDC28007FB74C /* FCUICommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCUICommonDefines.h; sourceTree = "<group>"; };
+		9D7C155620DCE022007FB74C /* FCUserAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUserAgreementViewController.m; sourceTree = "<group>"; };
+		9D7C155F20DCE022007FB74C /* FCUserAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUserAgreementViewController.h; sourceTree = "<group>"; };
+		9DD09AAE20207CFB00080061 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9DD09AB020207CFB00080061 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		9DD09AB120207CFB00080061 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		9DD09AC320207CFB00080061 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9DEA664C20DA070F00A39E70 /* UIImage+Fino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fino.m"; sourceTree = "<group>"; };
+		9DEA664D20DA070F00A39E70 /* UIImage+Fino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fino.h"; sourceTree = "<group>"; };
+		9DEA664E20DA070F00A39E70 /* UIColor+Fino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Fino.h"; sourceTree = "<group>"; };
+		9DEA664F20DA070F00A39E70 /* UIColor+Fino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Fino.m"; sourceTree = "<group>"; };
+		A108D599B88D2502E6623C53 /* Pods-finshare-Cloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finshare-Cloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-finshare-Cloud/Pods-finshare-Cloud.debug.xcconfig"; sourceTree = "<group>"; };
+		A81D8351228E58FB00687A57 /* FINOrgCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FINOrgCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81D8353228E58FB00687A57 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		A81D8354228E58FB00687A57 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		A81D8356228E58FB00687A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81D835D228E590F00687A57 /* FINOrgCallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FINOrgCallDirectory.entitlements; sourceTree = "<group>"; };
+		A81D8362228E594900687A57 /* FINContactCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FINContactCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81D8364228E594900687A57 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		A81D8365228E594900687A57 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		A81D8367228E594900687A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81D836E228E595000687A57 /* FINContactCallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FINContactCallDirectory.entitlements; sourceTree = "<group>"; };
+		A893E28E217DE7AE00D5E70C /* channel_work_ico_applets@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_work_ico_applets@3x.png"; sourceTree = "<group>"; };
+		A893E28F217DE7AE00D5E70C /* channel_work_ico_channel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_work_ico_channel@3x.png"; sourceTree = "<group>"; };
+		A893E290217DE7AF00D5E70C /* channel_work_ico_applets@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_work_ico_applets@2x.png"; sourceTree = "<group>"; };
+		A893E291217DE7AF00D5E70C /* channel_work_ico_channel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_work_ico_channel@2x.png"; sourceTree = "<group>"; };
+		A8AD947423725B4A0088CB3B /* FCQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeScanningView.m; sourceTree = "<group>"; };
+		A8AD947523725B4A0088CB3B /* FCQRCodeAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeAlbumManager.h; sourceTree = "<group>"; };
+		A8AD947623725B4A0088CB3B /* FCQRCodeHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeHelperTool.h; sourceTree = "<group>"; };
+		A8AD947723725B4A0088CB3B /* FCQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeScanManager.h; sourceTree = "<group>"; };
+		A8AD947823725B4A0088CB3B /* FCQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeGenerateManager.m; sourceTree = "<group>"; };
+		A8AD947923725B4A0088CB3B /* FCQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeScanningView.h; sourceTree = "<group>"; };
+		A8AD947A23725B4A0088CB3B /* FCQRCodeAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeAlbumManager.m; sourceTree = "<group>"; };
+		A8AD947B23725B4A0088CB3B /* FCQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeScanManager.m; sourceTree = "<group>"; };
+		A8AD947C23725B4A0088CB3B /* FCQRCodeHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeHelperTool.m; sourceTree = "<group>"; };
+		A8AD947D23725B4A0088CB3B /* FCQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeGenerateManager.h; sourceTree = "<group>"; };
+		A8AD947E23725B4A0088CB3B /* FCQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCode.h; sourceTree = "<group>"; };
+		A8AD94982373A7390088CB3B /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
+		B5561E1A4E02797DB8B1D9A0 /* libPods-finshare-Cloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-finshare-Cloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1076B88CFA03D24B3588F6D /* libPods-FinChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD04AAB821D2183D007AB787 /* FCHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHUD.m; sourceTree = "<group>"; };
+		CD04AAB921D2183D007AB787 /* FCHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHUD.h; sourceTree = "<group>"; };
+		CD0BEEED21CB74E400CCF68E /* FCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCLoginViewController.h; sourceTree = "<group>"; };
+		CD0BEEEE21CB74E400CCF68E /* FCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCLoginViewController.m; sourceTree = "<group>"; };
+		CD0BEEEF21CB74E400CCF68E /* FCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCLoginViewController.xib; sourceTree = "<group>"; };
+		CD0BEEF221CB7BDF00CCF68E /* FCPhoneVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCPhoneVerifyViewController.h; sourceTree = "<group>"; };
+		CD0BEEF321CB7BDF00CCF68E /* FCPhoneVerifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCPhoneVerifyViewController.m; sourceTree = "<group>"; };
+		CD0BEEF421CB7BDF00CCF68E /* FCPhoneVerifyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCPhoneVerifyViewController.xib; sourceTree = "<group>"; };
+		CD0BEEF721CB7E7600CCF68E /* FCRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCRegisterViewController.h; sourceTree = "<group>"; };
+		CD0BEEF821CB7E7600CCF68E /* FCRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCRegisterViewController.m; sourceTree = "<group>"; };
+		CD0BEEF921CB7E7600CCF68E /* FCRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCRegisterViewController.xib; sourceTree = "<group>"; };
+		CD0BEEFC21CB82DD00CCF68E /* FCNewPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCNewPasswordViewController.h; sourceTree = "<group>"; };
+		CD0BEEFD21CB82DD00CCF68E /* FCNewPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCNewPasswordViewController.m; sourceTree = "<group>"; };
+		CD0BEEFE21CB82DD00CCF68E /* FCNewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCNewPasswordViewController.xib; sourceTree = "<group>"; };
+		CD386A1822437FEC0000DCEB /* FINAuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FINAuthViewController.h; sourceTree = "<group>"; };
+		CD386A1922437FEC0000DCEB /* FINAuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FINAuthViewController.m; sourceTree = "<group>"; };
+		CD386A1A22437FEC0000DCEB /* FINAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FINAuthViewController.xib; sourceTree = "<group>"; };
+		CD6CAB59215E0EAD005B02DF /* FINMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FINMainController.h; sourceTree = "<group>"; };
+		CD6CAB5A215E0EAD005B02DF /* FINMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FINMainController.m; sourceTree = "<group>"; };
+		CD98AD0421D08540004075E5 /* FCServerSettingSelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCServerSettingSelectVC.h; sourceTree = "<group>"; };
+		CD98AD0521D08540004075E5 /* FCServerSettingAddVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCServerSettingAddVC.m; sourceTree = "<group>"; };
+		CD98AD0621D08540004075E5 /* FCServerSettingSelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCServerSettingSelectVC.m; sourceTree = "<group>"; };
+		CD98AD0721D08540004075E5 /* FCServerSettingAddVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCServerSettingAddVC.h; sourceTree = "<group>"; };
+		CDEA6292229390F500C72317 /* FCQRCodeErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCQRCodeErrorViewController.h; sourceTree = "<group>"; };
+		CDEA6293229390F500C72317 /* FCQRCodeErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCQRCodeErrorViewController.m; sourceTree = "<group>"; };
+		DE945425FFD7E606589F6C60 /* Pods-finshare-Cloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finshare-Cloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-finshare-Cloud/Pods-finshare-Cloud.release.xcconfig"; sourceTree = "<group>"; };
+		DE9ADBF2EB5A303255616E08 /* Pods-FinChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4E9AB52020612000C545CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4FF4CD20E0A0DC002C7AA0 /* CloudKit.framework in Frameworks */,
+				0535063DDD3411CCD74EA8AC /* libPods-FinChatDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4E9BAF202061C600C545CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBD306A93ED881414563572 /* libPods-finshare.a in Frameworks */,
+				900316EC331E965A23BCB156 /* libPods-finshare.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D834E228E58FB00687A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D835F228E594900687A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4E2A3B5A1CDCEB1B53DFB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F73CA804161895D73965972 /* Pods-FinChat.debug.xcconfig */,
+				08EA39E93D87EBD15721A403 /* Pods-FinChat.release.xcconfig */,
+				4439D0CD4ABDE6F4A0AD9950 /* Pods-finshare.debug.xcconfig */,
+				348A2F1FD6909A7FBF19365D /* Pods-finshare.release.xcconfig */,
+				0572BD3C40AA91F4F560C6D4 /* Pods-FinChat-Cloud.debug.xcconfig */,
+				6763EF954722707AD658A5B9 /* Pods-FinChat-Cloud.release.xcconfig */,
+				A108D599B88D2502E6623C53 /* Pods-finshare-Cloud.debug.xcconfig */,
+				DE945425FFD7E606589F6C60 /* Pods-finshare-Cloud.release.xcconfig */,
+				01AFCC765BA6E9AA324AD253 /* Pods-FinChatDemo.debug.xcconfig */,
+				DE9ADBF2EB5A303255616E08 /* Pods-FinChatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D4E9AAF2020612000C545CA = {
+			isa = PBXGroup;
+			children = (
+				9D4E9ABA2020612000C545CA /* FinChat */,
+				9D4E9BB3202061C600C545CA /* finshare */,
+				A81D8352228E58FB00687A57 /* FINOrgCallDirectory */,
+				A81D8363228E594900687A57 /* FINContactCallDirectory */,
+				9D4E9AB92020612000C545CA /* Products */,
+				0E4E2A3B5A1CDCEB1B53DFB3 /* Pods */,
+				A1C9430E3D8396958E5F1C3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4E9AB92020612000C545CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E9AB82020612000C545CA /* FinChatDemo.app */,
+				9D4E9BB2202061C600C545CA /* finshare.appex */,
+				A81D8351228E58FB00687A57 /* FINOrgCallDirectory.appex */,
+				A81D8362228E594900687A57 /* FINContactCallDirectory.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D4E9ABA2020612000C545CA /* FinChat */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E9AFB2020618000C545CA /* Controllers */,
+				A8AD947223725B4A0088CB3B /* Vendor */,
+				9D4E9B502020618100C545CA /* Common */,
+				9DD09AAB20207CFB00080061 /* Resources */,
+				9D4E9B562020618200C545CA /* WebRoot */,
+				9D4E9AF52020618000C545CA /* AppDelegate.h */,
+				9D4E9B272020618100C545CA /* AppDelegate.m */,
+				A8AD94982373A7390088CB3B /* theme.plist */,
+				9D4E9AF12020618000C545CA /* FinChat.xcdatamodeld */,
+				9D4E9B552020618200C545CA /* FinoChat.pch */,
+				9D4E9BC2202062F900C545CA /* FinChat.entitlements */,
+				9D4E9AF32020618000C545CA /* Info.plist */,
+				9D4E9B4C2020618100C545CA /* main.m */,
+			);
+			path = FinChat;
+			sourceTree = "<group>";
+		};
+		9D4E9AFB2020618000C545CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD386A1722437FD90000DCEB /* Auth */,
+				A8436CB5211055A300B9DB1C /* Main */,
+				9D7C155520DCE022007FB74C /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D4E9B132020618100C545CA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A4FC920E2788B00B68205 /* UIImage+ImageSize.h */,
+				9D6A4FCA20E2788B00B68205 /* UIImage+ImageSize.m */,
+				9DEA664E20DA070F00A39E70 /* UIColor+Fino.h */,
+				9DEA664F20DA070F00A39E70 /* UIColor+Fino.m */,
+				9DEA664D20DA070F00A39E70 /* UIImage+Fino.h */,
+				9DEA664C20DA070F00A39E70 /* UIImage+Fino.m */,
+				9D4E9B202020618100C545CA /* UIImage+Implementation.h */,
+				9D4E9B142020618100C545CA /* UIImage+Implementation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9D4E9B502020618100C545CA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD04AAB721D2183D007AB787 /* Toast */,
+				9D4E9B132020618100C545CA /* Categories */,
+				A8436CB82110567100B9DB1C /* Constants */,
+				A8436CB72110564500B9DB1C /* Utils */,
+				9D6A4FAA20E2730600B68205 /* FCService.h */,
+				9D6A4FAB20E2730600B68205 /* FCService.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D4E9B562020618200C545CA /* WebRoot */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E9B572020618200C545CA /* index.html */,
+			);
+			path = WebRoot;
+			sourceTree = "<group>";
+		};
+		9D4E9BB3202061C600C545CA /* finshare */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E9BC52020631600C545CA /* finshare.entitlements */,
+				9D4E9BB4202061C600C545CA /* ShareViewController.h */,
+				9D4E9BB5202061C600C545CA /* ShareViewController.m */,
+				9D4E9BBA202061C600C545CA /* Info.plist */,
+				9D6CB6092060F82900BA186A /* Main.storyboard */,
+			);
+			path = finshare;
+			sourceTree = "<group>";
+		};
+		9D6CB5E42060E59900BA186A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A893E290217DE7AF00D5E70C /* channel_work_ico_applets@2x.png */,
+				A893E28E217DE7AE00D5E70C /* channel_work_ico_applets@3x.png */,
+				A893E291217DE7AF00D5E70C /* channel_work_ico_channel@2x.png */,
+				A893E28F217DE7AE00D5E70C /* channel_work_ico_channel@3x.png */,
+				9D6CB5E92060E59900BA186A /* agreement@2x.png */,
+				9D6CB5EB2060E59900BA186A /* agreement@3x.png */,
+				9D6CB5EC2060E59900BA186A /* finochatlogo@2x.png */,
+				9D6CB5E82060E59900BA186A /* finochatlogo@3x.png */,
+				9D6CB5E72060E59900BA186A /* loading-animate.gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9D7C155520DCE022007FB74C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A887546C22DD992800BE105B /* Scan */,
+				CD98AD0321D08540004075E5 /* Setting */,
+				9D7C155F20DCE022007FB74C /* FCUserAgreementViewController.h */,
+				9D7C155620DCE022007FB74C /* FCUserAgreementViewController.m */,
+				CD0BEEED21CB74E400CCF68E /* FCLoginViewController.h */,
+				CD0BEEEE21CB74E400CCF68E /* FCLoginViewController.m */,
+				CD0BEEEF21CB74E400CCF68E /* FCLoginViewController.xib */,
+				CD0BEEF221CB7BDF00CCF68E /* FCPhoneVerifyViewController.h */,
+				CD0BEEF321CB7BDF00CCF68E /* FCPhoneVerifyViewController.m */,
+				CD0BEEF421CB7BDF00CCF68E /* FCPhoneVerifyViewController.xib */,
+				CD0BEEF721CB7E7600CCF68E /* FCRegisterViewController.h */,
+				CD0BEEF821CB7E7600CCF68E /* FCRegisterViewController.m */,
+				CD0BEEF921CB7E7600CCF68E /* FCRegisterViewController.xib */,
+				CD0BEEFC21CB82DD00CCF68E /* FCNewPasswordViewController.h */,
+				CD0BEEFD21CB82DD00CCF68E /* FCNewPasswordViewController.m */,
+				CD0BEEFE21CB82DD00CCF68E /* FCNewPasswordViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9DD09AAB20207CFB00080061 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CB5E42060E59900BA186A /* Images */,
+				9D6CB5F62060E59900BA186A /* Media.xcassets */,
+				9DD09AAD20207CFB00080061 /* LaunchScreen.strings */,
+				9DD09AAF20207CFB00080061 /* Main.strings */,
+				9DD09AB120207CFB00080061 /* cities.plist */,
+				9DD09AC320207CFB00080061 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1C9430E3D8396958E5F1C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4FF4CC20E0A0DC002C7AA0 /* CloudKit.framework */,
+				C1076B88CFA03D24B3588F6D /* libPods-FinChat.a */,
+				5B12A7F12E0807C54765D06A /* libPods-finshare.a */,
+				7383EE2BC0D5E3105DF79E13 /* libPods-FinChat-Cloud.a */,
+				B5561E1A4E02797DB8B1D9A0 /* libPods-finshare-Cloud.a */,
+				1758DB838CF6EB0F9A848B76 /* libPods-FinChatDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A81D8352228E58FB00687A57 /* FINOrgCallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				A81D835D228E590F00687A57 /* FINOrgCallDirectory.entitlements */,
+				A81D8353228E58FB00687A57 /* CallDirectoryHandler.h */,
+				A81D8354228E58FB00687A57 /* CallDirectoryHandler.m */,
+				A81D8356228E58FB00687A57 /* Info.plist */,
+			);
+			path = FINOrgCallDirectory;
+			sourceTree = "<group>";
+		};
+		A81D8363228E594900687A57 /* FINContactCallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				A81D836E228E595000687A57 /* FINContactCallDirectory.entitlements */,
+				A81D8364228E594900687A57 /* CallDirectoryHandler.h */,
+				A81D8365228E594900687A57 /* CallDirectoryHandler.m */,
+				A81D8367228E594900687A57 /* Info.plist */,
+			);
+			path = FINContactCallDirectory;
+			sourceTree = "<group>";
+		};
+		A8436CB5211055A300B9DB1C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E9B512020618100C545CA /* FCNavigationController.h */,
+				9D4E9B532020618100C545CA /* FCNavigationController.m */,
+				9D4E9B522020618100C545CA /* FCViewController.h */,
+				9D4E9B542020618100C545CA /* FCViewController.m */,
+				6778A2A3212D7A0F00B59A86 /* FINPushNotifacationManager.h */,
+				6778A2A4212D7A0F00B59A86 /* FINPushNotifacationManager.m */,
+				CD6CAB59215E0EAD005B02DF /* FINMainController.h */,
+				CD6CAB5A215E0EAD005B02DF /* FINMainController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A8436CB72110564500B9DB1C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C9A2B20DA192900713E18 /* FCUIHelper.h */,
+				9D5C9A2A20DA192900713E18 /* FCUIHelper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8436CB82110567100B9DB1C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9D7C155420DCDC28007FB74C /* FCUICommonDefines.h */,
+				9D4E9B5F2020618200C545CA /* Constants.h */,
+				9D4E9B592020618200C545CA /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A887546C22DD992800BE105B /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A4FC320E2782400B68205 /* FCQRCodeScanningViewController.h */,
+				9D6A4FC220E2782400B68205 /* FCQRCodeScanningViewController.m */,
+				CDEA6292229390F500C72317 /* FCQRCodeErrorViewController.h */,
+				CDEA6293229390F500C72317 /* FCQRCodeErrorViewController.m */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		A8AD947223725B4A0088CB3B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A8AD947323725B4A0088CB3B /* FCQRCode */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A8AD947323725B4A0088CB3B /* FCQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A8AD947423725B4A0088CB3B /* FCQRCodeScanningView.m */,
+				A8AD947523725B4A0088CB3B /* FCQRCodeAlbumManager.h */,
+				A8AD947623725B4A0088CB3B /* FCQRCodeHelperTool.h */,
+				A8AD947723725B4A0088CB3B /* FCQRCodeScanManager.h */,
+				A8AD947823725B4A0088CB3B /* FCQRCodeGenerateManager.m */,
+				A8AD947923725B4A0088CB3B /* FCQRCodeScanningView.h */,
+				A8AD947A23725B4A0088CB3B /* FCQRCodeAlbumManager.m */,
+				A8AD947B23725B4A0088CB3B /* FCQRCodeScanManager.m */,
+				A8AD947C23725B4A0088CB3B /* FCQRCodeHelperTool.m */,
+				A8AD947D23725B4A0088CB3B /* FCQRCodeGenerateManager.h */,
+				A8AD947E23725B4A0088CB3B /* FCQRCode.h */,
+			);
+			path = FCQRCode;
+			sourceTree = "<group>";
+		};
+		CD04AAB721D2183D007AB787 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				CD04AAB821D2183D007AB787 /* FCHUD.m */,
+				CD04AAB921D2183D007AB787 /* FCHUD.h */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		CD386A1722437FD90000DCEB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CD386A1822437FEC0000DCEB /* FINAuthViewController.h */,
+				CD386A1922437FEC0000DCEB /* FINAuthViewController.m */,
+				CD386A1A22437FEC0000DCEB /* FINAuthViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CD98AD0321D08540004075E5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CD98AD0721D08540004075E5 /* FCServerSettingAddVC.h */,
+				CD98AD0521D08540004075E5 /* FCServerSettingAddVC.m */,
+				CD98AD0421D08540004075E5 /* FCServerSettingSelectVC.h */,
+				CD98AD0621D08540004075E5 /* FCServerSettingSelectVC.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4E9AB72020612000C545CA /* FinChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4E9AE72020612100C545CA /* Build configuration list for PBXNativeTarget "FinChatDemo" */;
+			buildPhases = (
+				D29350A51A829E4D7D85856B /* [CP] Check Pods Manifest.lock */,
+				9D4E9AB42020612000C545CA /* Sources */,
+				9D4E9AB52020612000C545CA /* Frameworks */,
+				9D4E9AB62020612000C545CA /* Resources */,
+				9D4E9BC1202061C600C545CA /* Embed App Extensions */,
+				D5F57C3F41900D134CD6291A /* [CP] Embed Pods Frameworks */,
+				84CDF8661C98DF419FE2AC07 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D4E9BBC202061C600C545CA /* PBXTargetDependency */,
+				A81D8358228E58FB00687A57 /* PBXTargetDependency */,
+				A81D8369228E594900687A57 /* PBXTargetDependency */,
+			);
+			name = FinChatDemo;
+			productName = FinChat;
+			productReference = 9D4E9AB82020612000C545CA /* FinChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D4E9BB1202061C600C545CA /* finshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4E9BBE202061C600C545CA /* Build configuration list for PBXNativeTarget "finshare" */;
+			buildPhases = (
+				DE86D72E890456E01C890324 /* [CP] Check Pods Manifest.lock */,
+				9D4E9BAE202061C600C545CA /* Sources */,
+				9D4E9BAF202061C600C545CA /* Frameworks */,
+				9D4E9BB0202061C600C545CA /* Resources */,
+				74FD4E7C07675CA19716B5C1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = finshare;
+			productName = finshare;
+			productReference = 9D4E9BB2202061C600C545CA /* finshare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A81D8350228E58FB00687A57 /* FINOrgCallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81D835C228E58FB00687A57 /* Build configuration list for PBXNativeTarget "FINOrgCallDirectory" */;
+			buildPhases = (
+				A81D834D228E58FB00687A57 /* Sources */,
+				A81D834E228E58FB00687A57 /* Frameworks */,
+				A81D834F228E58FB00687A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FINOrgCallDirectory;
+			productName = FINOrgCallDirectory;
+			productReference = A81D8351228E58FB00687A57 /* FINOrgCallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A81D8361228E594900687A57 /* FINContactCallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81D836B228E594900687A57 /* Build configuration list for PBXNativeTarget "FINContactCallDirectory" */;
+			buildPhases = (
+				A81D835E228E594900687A57 /* Sources */,
+				A81D835F228E594900687A57 /* Frameworks */,
+				A81D8360228E594900687A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FINContactCallDirectory;
+			productName = FINContactCallDirectory;
+			productReference = A81D8362228E594900687A57 /* FINContactCallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4E9AB02020612000C545CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = finogeeks;
+				TargetAttributes = {
+					9D4E9AB72020612000C545CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					9D4E9BB1202061C600C545CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					A81D8350228E58FB00687A57 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A81D8361228E594900687A57 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9D4E9AB32020612000C545CA /* Build configuration list for PBXProject "FinChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 9D4E9AAF2020612000C545CA;
+			productRefGroup = 9D4E9AB92020612000C545CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4E9AB72020612000C545CA /* FinChatDemo */,
+				9D4E9BB1202061C600C545CA /* finshare */,
+				A81D8350228E58FB00687A57 /* FINOrgCallDirectory */,
+				A81D8361228E594900687A57 /* FINContactCallDirectory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D4E9AB62020612000C545CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4E9BA72020618200C545CA /* index.html in Resources */,
+				A893E296217DE7AF00D5E70C /* channel_work_ico_applets@2x.png in Resources */,
+				9D6CB5F92060E59900BA186A /* loading-animate.gif in Resources */,
+				9D6CB5FA2060E59900BA186A /* finochatlogo@3x.png in Resources */,
+				9DD09AC620207CFB00080061 /* Main.strings in Resources */,
+				A893E292217DE7AF00D5E70C /* channel_work_ico_applets@3x.png in Resources */,
+				A8AD94992373A7390088CB3B /* theme.plist in Resources */,
+				9D6CB5FD2060E59900BA186A /* agreement@3x.png in Resources */,
+				9D6CB5FE2060E59900BA186A /* finochatlogo@2x.png in Resources */,
+				9DD09AC720207CFB00080061 /* cities.plist in Resources */,
+				9DD09AC520207CFB00080061 /* LaunchScreen.strings in Resources */,
+				A893E294217DE7AF00D5E70C /* channel_work_ico_channel@3x.png in Resources */,
+				A893E298217DE7AF00D5E70C /* channel_work_ico_channel@2x.png in Resources */,
+				CD0BEF0021CB82DD00CCF68E /* FCNewPasswordViewController.xib in Resources */,
+				9D6CB5FB2060E59900BA186A /* agreement@2x.png in Resources */,
+				CD0BEEF121CB74E400CCF68E /* FCLoginViewController.xib in Resources */,
+				CD0BEEFB21CB7E7600CCF68E /* FCRegisterViewController.xib in Resources */,
+				CD0BEEF621CB7BDF00CCF68E /* FCPhoneVerifyViewController.xib in Resources */,
+				CD386A1C22437FEC0000DCEB /* FINAuthViewController.xib in Resources */,
+				9D4E9B692020618200C545CA /* Info.plist in Resources */,
+				9D6CB6082060E59900BA186A /* Media.xcassets in Resources */,
+				9DD09AD820207CFB00080061 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4E9BB0202061C600C545CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6CB60A2060F82900BA186A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D834F228E58FB00687A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D8360228E594900687A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74FD4E7C07675CA19716B5C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finshare/Pods-finshare-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-finshare/Pods-finshare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84CDF8661C98DF419FE2AC07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D29350A51A829E4D7D85856B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinChatDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F57C3F41900D134CD6291A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo-frameworks.sh",
+				"${PODS_ROOT}/FinApplet/FinApplet.framework",
+				"${PODS_ROOT}/FinChat-Mixins/FinChat.framework",
+				"${PODS_ROOT}/FinChatSDK/FinChatSDK.framework",
+				"${PODS_ROOT}/FinJitsiMeet/JitsiMeet.framework",
+				"${PODS_ROOT}/FinSDKCore/fincore.framework",
+				"${PODS_ROOT}/FinWebRTC/WebRTC.framework",
+				"${PODS_ROOT}/MatrixSDK-Max/MatrixSDK.framework",
+				"${PODS_ROOT}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FinApplet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FinChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FinChatSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JitsiMeet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fincore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MatrixSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinChatDemo/Pods-FinChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE86D72E890456E01C890324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-finshare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4E9AB42020612000C545CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A4FD520E2788B00B68205 /* UIImage+ImageSize.m in Sources */,
+				CD6CAB5B215E0EAD005B02DF /* FINMainController.m in Sources */,
+				CD0BEEF521CB7BDF00CCF68E /* FCPhoneVerifyViewController.m in Sources */,
+				9DEA665020DA071000A39E70 /* UIImage+Fino.m in Sources */,
+				CD98AD0821D08540004075E5 /* FCServerSettingAddVC.m in Sources */,
+				CD04AABA21D2183D007AB787 /* FCHUD.m in Sources */,
+				9D6A4FAC20E2730600B68205 /* FCService.m in Sources */,
+				CD0BEEFA21CB7E7600CCF68E /* FCRegisterViewController.m in Sources */,
+				9D4E9B792020618200C545CA /* UIImage+Implementation.m in Sources */,
+				9D4E9BA82020618200C545CA /* Constants.m in Sources */,
+				6778A2A5212D7A0F00B59A86 /* FINPushNotifacationManager.m in Sources */,
+				9D6A4FC420E2782500B68205 /* FCQRCodeScanningViewController.m in Sources */,
+				CD0BEEFF21CB82DD00CCF68E /* FCNewPasswordViewController.m in Sources */,
+				CD386A1B22437FEC0000DCEB /* FINAuthViewController.m in Sources */,
+				A8AD948A23725B4A0088CB3B /* FCQRCodeScanningView.m in Sources */,
+				9D7C156620DCE022007FB74C /* FCUserAgreementViewController.m in Sources */,
+				9D4E9B682020618200C545CA /* FinChat.xcdatamodeld in Sources */,
+				9DEA665120DA071000A39E70 /* UIColor+Fino.m in Sources */,
+				9D5C9A2C20DA192900713E18 /* FCUIHelper.m in Sources */,
+				9D4E9BA62020618200C545CA /* FCViewController.m in Sources */,
+				CD98AD0921D08540004075E5 /* FCServerSettingSelectVC.m in Sources */,
+				CD0BEEF021CB74E400CCF68E /* FCLoginViewController.m in Sources */,
+				A8AD948E23725B4A0088CB3B /* FCQRCodeHelperTool.m in Sources */,
+				A8AD948B23725B4A0088CB3B /* FCQRCodeGenerateManager.m in Sources */,
+				9D4E9B832020618200C545CA /* AppDelegate.m in Sources */,
+				A8AD948C23725B4A0088CB3B /* FCQRCodeAlbumManager.m in Sources */,
+				9D4E9BA52020618200C545CA /* FCNavigationController.m in Sources */,
+				CDEA6294229390F500C72317 /* FCQRCodeErrorViewController.m in Sources */,
+				9D4E9BA12020618200C545CA /* main.m in Sources */,
+				A8AD948D23725B4A0088CB3B /* FCQRCodeScanManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4E9BAE202061C600C545CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4E9BB6202061C600C545CA /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D834D228E58FB00687A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81D8355228E58FB00687A57 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81D835E228E594900687A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81D8366228E594900687A57 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D4E9BBC202061C600C545CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D4E9BB1202061C600C545CA /* finshare */;
+			targetProxy = 9D4E9BBB202061C600C545CA /* PBXContainerItemProxy */;
+		};
+		A81D8358228E58FB00687A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D8350228E58FB00687A57 /* FINOrgCallDirectory */;
+			targetProxy = A81D8357228E58FB00687A57 /* PBXContainerItemProxy */;
+		};
+		A81D8369228E594900687A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D8361228E594900687A57 /* FINContactCallDirectory */;
+			targetProxy = A81D8368228E594900687A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DD09AAD20207CFB00080061 /* LaunchScreen.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DD09AAE20207CFB00080061 /* zh-Hans */,
+			);
+			name = LaunchScreen.strings;
+			sourceTree = "<group>";
+		};
+		9DD09AAF20207CFB00080061 /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DD09AB020207CFB00080061 /* zh-Hans */,
+			);
+			name = Main.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D4E9AE52020612100C545CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D4E9AE62020612100C545CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D4E9AE82020612100C545CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01AFCC765BA6E9AA324AD253 /* Pods-FinChatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FinChat/FinChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FinChat/FinoChat.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FIN_INTERNAL=1",
+				);
+				INFOPLIST_FILE = FinChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa;
+				PRODUCT_NAME = FinChatDemo;
+				PROVISIONING_PROFILE = "aad08659-0abe-4008-9cbf-ac248c886f03";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		9D4E9AE92020612100C545CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9ADBF2EB5A303255616E08 /* Pods-FinChatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FinChat/FinChat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FinChat/FinoChat.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FIN_INTERNAL=1",
+				);
+				INFOPLIST_FILE = FinChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa;
+				PRODUCT_NAME = FinChatDemo;
+				PROVISIONING_PROFILE = "fab2de07-2eb0-419a-b825-c71540aa6cd0";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_adhoc;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		9D4E9BBF202061C600C545CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4439D0CD4ABDE6F4A0AD9950 /* Pods-finshare.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = finshare/finshare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FIN_INTERNAL=1",
+				);
+				INFOPLIST_FILE = finshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "363809dc-6a48-41d1-b1e2-81374b47dd6e";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_share_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9D4E9BC0202061C600C545CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348A2F1FD6909A7FBF19365D /* Pods-finshare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = finshare/finshare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FIN_INTERNAL=1",
+				);
+				INFOPLIST_FILE = finshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c0990a3e-e360-4c4c-9392-46842b1b0efd";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_share_adhoc;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A81D835A228E58FB00687A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = FINOrgCallDirectory/FINOrgCallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				INFOPLIST_FILE = FINOrgCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.FINOrgCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_orgcall_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A81D835B228E58FB00687A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = FINOrgCallDirectory/FINOrgCallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				INFOPLIST_FILE = FINOrgCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.FINOrgCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_orgcalldirectory_adhoc;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A81D836C228E594900687A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = FINContactCallDirectory/FINContactCallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				INFOPLIST_FILE = FINContactCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.FINContactCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_contactcall_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A81D836D228E594900687A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = FINContactCallDirectory/FINContactCallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M6UWNQYZ59;
+				INFOPLIST_FILE = FINContactCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finogeeks.finchat.oa.FINContactCallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = finchat_oa_contactscalldirectory_adhoc;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4E9AB32020612000C545CA /* Build configuration list for PBXProject "FinChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4E9AE52020612100C545CA /* Debug */,
+				9D4E9AE62020612100C545CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4E9AE72020612100C545CA /* Build configuration list for PBXNativeTarget "FinChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4E9AE82020612100C545CA /* Debug */,
+				9D4E9AE92020612100C545CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4E9BBE202061C600C545CA /* Build configuration list for PBXNativeTarget "finshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4E9BBF202061C600C545CA /* Debug */,
+				9D4E9BC0202061C600C545CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81D835C228E58FB00687A57 /* Build configuration list for PBXNativeTarget "FINOrgCallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81D835A228E58FB00687A57 /* Debug */,
+				A81D835B228E58FB00687A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81D836B228E594900687A57 /* Build configuration list for PBXNativeTarget "FINContactCallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81D836C228E594900687A57 /* Debug */,
+				A81D836D228E594900687A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D4E9AF12020618000C545CA /* FinChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D4E9AF22020618000C545CA /* FinChat.xcdatamodel */,
+			);
+			currentVersion = 9D4E9AF22020618000C545CA /* FinChat.xcdatamodel */;
+			path = FinChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9D4E9AB02020612000C545CA /* Project object */;
+}

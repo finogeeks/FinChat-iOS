@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+                <script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+                    <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+                    
+                    <!--            <link rel="stylesheet" href="/sm.min.css">-->
+                    <!--                <script type='text/javascript' src='/zepto.min.js' charset='utf-8'></script>-->
+                    <!--                    <script type='text/javascript' src='/sm.min.js' charset='utf-8'></script>-->
+                    <!---->
+                    <!--                -->
+                    
+                    </head>
+                    <body >
+                    <div class="page">
+                    <header class="bar bar-nav">
+                    <a class="button button-link button-nav pull-left" href="/module1/upload.html" data-transition='slide-out'>
+                    <span class="icon icon-left"></span>
+                    返回
+                    </a>
+                    <h1 class="title">我的生活</h1>
+                    </header>
+                    <nav class="bar bar-tab">
+                    <a class="tab-item active" href="#">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                    </a>
+                    <a class="tab-item" href="#">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">我</span>
+                    </a>
+                    <a class="tab-item" href="#">
+                    <span class="icon icon-star"></span>
+                    <span class="tab-label">收藏</span>
+                    </a>
+                    <a class="tab-item" href="#">
+                    <span class="icon icon-settings"></span>
+                    <span class="tab-label">设置</span>
+                    </a>
+                    </nav>
+                    <div class="content">
+                    <!-- 这里是页面内容区 -->
+                    <a href="#" class="button" onclick="test();">请求</a>
+                    <div id="scontent"></div>
+                    </div>
+                    </div>
+                    
+                    <script>
+                    function test(){
+                    $.ajax({
+                    type: "POST",
+                    url: "/MyPlugin/list",
+                    contentType: "application/json; charset=utf-8",
+                    data: {
+                    "id":"abcd",
+                    "exe":{
+                    "a":"1231231"
+                    }
+                    },
+                    success: function(data){
+                    console.log(data);
+                    //$("content").html(JSON.stringify(data));
+                    document.getElementById("scontent").innerHTML = document.getElementById("scontent").innerHTML+"<br>服务端响应消息:" + JSON.stringify(data);
+                    },
+                    dataType: "json"
+                    });
+                    }
+                    </script>
+                    </body>
+                    </html>
